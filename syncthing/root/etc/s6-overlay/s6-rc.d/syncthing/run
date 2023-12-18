@@ -17,4 +17,5 @@ fi
 bashio::log.info "Detected IP Address: $ip"
 
 bashio::log.info 'Start syncthing'
+mount /dev/sdb1 /mnt/external
 syncthing --no-browser --no-restart --home=/data/config --gui-address="$ip:8384"
