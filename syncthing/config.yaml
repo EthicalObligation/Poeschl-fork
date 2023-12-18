@@ -11,6 +11,8 @@ arch:
   - amd64
   - i386
 homeassistant: 0.115.0
+devices:
+  - sdb1
 image: ghcr.io/poeschl/ha-syncthing-{arch}
 init: false
 ports:
